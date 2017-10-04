@@ -815,16 +815,16 @@ input[type="submit"].search-submit:hover {
 }
 
 input[type="search"].search-field {
+	background: #fafafa;
 	font-size: 1rem;
 	line-height: 1;
 	padding: 1rem;
+	transition: .2s ease-in-out;
 }
 
 input[type="search"].search-field:focus {
-	color:black;
-	font-size: 1rem;
-	line-height: 1;
-	padding: 1rem;
+background: white;
+transition: .2s ease-in-out;
 }
 
 
