@@ -1,4 +1,4 @@
-/*!
+a/*!
 Theme Name: Literature City
 Theme URI: http://underscores.me/
 Author: Thomas Sweeney
@@ -46,8 +46,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: open-sans, sans-serif;
 	line-height: 1.15;
+	color: #231900;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
@@ -91,6 +92,7 @@ template {
 
 a {
 	background-color: transparent;
+	color: #372d17;
 }
 
 a:active,
@@ -114,7 +116,22 @@ dfn {
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
+	color: #231900;
+	font-family: 'Open Sans';
+	letter-spacing: -2px;
+	text-transform: uppercase;
 }
+
+p {
+	color: #231900;
+	font-family: 'Crimson Text';
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-bottom: 48px;
+	max-width: 650px;
+}
+
 
 mark {
 	background: #ff0;
@@ -267,7 +284,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: open-sans, sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -402,7 +419,7 @@ table {
 }
 
 .site-header {
-	background-color: #fafafa;
+	background-color: #ffcc00;
 	position: relative;
 }
 
@@ -410,12 +427,42 @@ table {
 
 .site-branding {
 	padding: 1em 0;
+	padding-bottom: 36px;
 	position: relative;
 	-webkit-transition: margin-bottom 0.2s;
 	transition: margin-bottom 0.2s;
 	z-index: 3;
 }
+ 
+.site-title > a,
+.site-title > a:visited {
+	font-size: 94px;
+	font-weight: 800;
+	line-height: 1.1;
+	margin-bottom: 0;
+	color: #231900;
+	text-decoration: none;
+	font-weight: 800;
+	padding: 0;
+	margin: 0;
+}
 
+.site-title > a:hover {
+	color: #342a11;
+}
+
+.site-branding .site-description {
+	padding: 0;
+	margin: 0;
+}
+
+.site-description {
+	font-size: 2rem;
+	font-family: open-sans, helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -2;
+}
 
 /*--------------------------------------------------------------
 # Forms
@@ -501,9 +548,7 @@ textarea {
 	width: 100%;
 }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -530,11 +575,20 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.navigation-top {
+	background: #fff;
+	border-top: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	font-size: 1.1em;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .main-navigation ul {
@@ -575,11 +629,15 @@ a:hover, a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	padding-right: 2rem;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-family: "open sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 500;
+	color: #372d17;
 }
 
 /* Small menu. */
@@ -618,6 +676,18 @@ a:hover, a:active {
 	text-align: right;
 	width: 50%;
 }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+#primary-menu {
+
+}
+
+.nav-menu{
+
+}
+
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -713,6 +783,10 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-area {
+	
+}
+
 .widget {
 	margin: 0 0 1.5em;
 	/* Make sure select elements fit in widgets. */
@@ -722,15 +796,52 @@ a:hover, a:active {
 	max-width: 100%;
 }
 
+input[type="submit"].search-submit {
+	color: #e6e6e6;
+	background: #231900;
+	font-size: 1rem;
+	line-height: 1;
+	padding: 1rem;
+	transition: .2s ease-in-out;
+}
+
+input[type="submit"].search-submit:hover {
+	color: #fafafa;
+	background: #345aaa;
+	font-size: 1rem;
+	line-height: 1;
+	padding: 1rem;
+	transition: .2s ease-in-out;
+}
+
+input[type="search"].search-field {
+	font-size: 1rem;
+	line-height: 1;
+	padding: 1rem;
+}
+
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+.content-area {
+	padding-top: 3rem;
+}
+
+#main {
+	float: left;
+	width: 50%;
+}
+
+#secondary {
+	float: right;
+	width:35%;
+}
 
 .wrap {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 700px;
+	max-width: 1000px;
 	padding-left: 2em;
 	padding-right: 2em;
 }
@@ -739,11 +850,19 @@ a:hover, a:active {
 	clear: both;
 	content: "";
 	display: block;
+}
 
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.entry-title {
+	margin-top: 0;
+}
+
+.entry-title a {
+	text-decoration: none;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

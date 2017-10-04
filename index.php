@@ -13,9 +13,11 @@
  */
 
 get_header(); ?>
-
+<div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+
+		
 
 		<?php
 		if ( have_posts() ) :
@@ -47,10 +49,12 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
 get_sidebar();
 get_footer();
+?>
+</div><!-- wrap -->
