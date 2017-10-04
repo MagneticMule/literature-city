@@ -820,6 +820,13 @@ input[type="search"].search-field {
 	padding: 1rem;
 }
 
+input[type="search"].search-field:focus {
+	color:black;
+	font-size: 1rem;
+	line-height: 1;
+	padding: 1rem;
+}
+
 
 /*--------------------------------------------------------------
 # Layout
