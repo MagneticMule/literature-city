@@ -12,20 +12,22 @@
 ?>
 
 	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer">
+	<div class="wrap">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'literature-city' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'literature-city' ), 'WordPress' );
+				printf( esc_html__( 'Built on %s', 'literature-city' ), 'WordPress' );
 			?></a>
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'literature-city' ), 'literature-city', '<a href="http://magneticmule.com">Thomas Sweeney</a>' );
+				printf( esc_html__( 'Using the %1$s theme by %2$s.', 'Literature City' ), 'Literature City', '<a href="http://magneticmule.com">Thomas Sweeney</a>' );
 			?>
 		</div><!-- .site-info -->
+		</div><!--wrap-->
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

@@ -39,7 +39,7 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 		</div><!-- .wrap -->
-		<div class="navigation-top">
+		<div id="top-menu" class="navigation-top">
 		<div class="wrap">
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'literature-city' ); ?></button>
