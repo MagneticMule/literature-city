@@ -19,10 +19,10 @@
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Built on %s', 'literature-city' ), 'WordPress' );
 			?></a>
-			<span class="sep"> | </span>
+
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Using the %1$s theme by %2$s.', 'Literature City' ), 'Literature City', '<a href="http://magneticmule.com">Thomas Sweeney</a>' );
+				printf( esc_html__( 'using the %1$s theme by %2$s.', 'Literature City' ), 'Literature City', '<a href="http://magneticmule.com">Thomas Sweeney</a>' );
 			?>
 		</div><!-- .site-info -->
 		</div><!--wrap-->

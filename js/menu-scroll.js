@@ -1,20 +1,30 @@
 /**
  *  menuScroll.js
  * 
- * Listens to the position of the div with id of #top-menu. 
+ * 
  * 
  */
 
-jQuery(window).scroll(function() {
-  let scrollTop = jQuery(this).scrollTop();
-  let topMenu = jQuery('#top-menu');
-  let pageHeader = jQuery('body').find('#masthead');
-  
-  if (scrollTop >= pageHeader.height()) {
-    jQuery(topMenu).toggleClass('fixed', true);
-  } else {
-    jQuery(topMenu).toggleClass('fixed', false);
+ // assign $ = jQuery as WP uses jQuery in compatibikity mode
+(function($) {
+  // Variables
+  var topMenu = $("body").find("#top-menu");
+  var pageHeader = $("body").find("#masthead");
+
+  /**
+   * If the windows has scrolled to or past the height of the page heaer then make the
+   * Top Menu "stick"
+   */
+  function stickHeader() {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop >= pageHeader.height()) {
+      $(topMenu).addClass("fixed");
+    } else {
+      $(topMenu).removeClass("fixed");
+    }
   }
-});
 
-
+  $(window).on("scroll", function() {
+    stickHeader();
+  });
+})(jQuery); 
