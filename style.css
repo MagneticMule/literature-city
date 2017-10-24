@@ -25,32 +25,32 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Header
-# Footer
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Layout
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
+1 Normalize
+2 Typography
+3 Elements
+4 Header
+5 Footer
+6 Forms
+7 Navigation
+	7.1 Links
+	7.2 Menus
+8 Accessibility
+9 Alignments
+10 Clearings
+11 Widgets
+12 Layout
+13 Content
+	13.1 Posts and pages
+	13.2 Comments
+14 Infinite scroll
+15 Media
+	15.1 Captions
+	15.2 Galleries
 --------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
-# Normalize
+1. Normalize
 --------------------------------------------------------------*/
 
 html {
@@ -362,7 +362,24 @@ ins {
 }
 
 big {
-    font-size: 125%;
+    font-size: 1.25rem;
+}
+
+
+/*--------------------------------------------------------------
+# Font characteristics
+--------------------------------------------------------------*/
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 
@@ -603,7 +620,7 @@ a {
     position: relative;
 }
 
-a:before {
+a.underlined:before {
     background: royalblue;
     position: absolute;
     content: "";
@@ -620,7 +637,7 @@ a:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+a.underlined:hover:before {
     visibility: visible;
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -722,6 +739,7 @@ a:active {
 .main-navigation a {
     display: block;
     text-decoration: none;
+    text-transform: uppercase;
     font-family: "open sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
     color: #372d17;
