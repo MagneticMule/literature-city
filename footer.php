@@ -13,7 +13,16 @@
 
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer">
-	<div class="wrap">
+		<div class="wrap">
+			<div class="contact-info">
+				<div class="footer-contact">
+				<ul class="home-address">
+					<a class="our-email" href="mailto:hello@buildingacityofliterature.org">hello@buildingacityofliterature.org</a>
+					<li class="first-line">School of Education</li>
+					<li>University of Nottingham</li>
+				</ul>
+				</div>
+			</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'literature-city' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */

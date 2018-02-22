@@ -13,7 +13,8 @@
             var scrollTop = $(window).scrollTop();
             if (scrollTop >= pageHeader.height())
                 $(topMenu).addClass("fixed");
-        } else {
+            } 
+            else {
             $(topMenu).removeClass("fixed");
         }
     }
