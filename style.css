@@ -460,14 +460,21 @@ table {
 # Header
 --------------------------------------------------------------*/
 
+#masthead {
+    height: 600px;
+}
+
 #masthead .wrap {
     position: relative;
 }
 
 .site-header {
-    background-color: #ffcc00;
+    /* background-color: #ffcc00; */
+    background-image: url('images/literature-city-header.jpg');
+    background-size: cover;
     position: relative;
 }
+
 
 
 /* Site branding */
@@ -489,6 +496,7 @@ table {
     line-height: 1.1;
     margin-bottom: 0;
     color: #231900;
+    opacity: .7;
     text-decoration: none;
     font-weight: 800;
     padding: 0;
@@ -496,7 +504,7 @@ table {
 }
 
 .site-title>a:hover {
-    color: #342a11;
+    opacity: .5;
 }
 
 .site-branding .site-description {
@@ -509,6 +517,7 @@ table {
     font-family: open-sans, helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
     font-weight: 400;
     letter-spacing: -2px;
+    opacity:.5;
 }
 
 
@@ -698,6 +707,7 @@ a:active {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
     position: absolute;
+    bottom:0;
 }
 
 .navigation-top.fixed {
