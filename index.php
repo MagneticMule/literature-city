@@ -14,9 +14,8 @@
 
 get_header(); ?>
 <div class="wrap">
-
-
 	<div id="primary" class="content-area">
+	<hr>
 		<main id="main" class="site-main">
 		
 		<?php

@@ -462,6 +462,7 @@ table {
 
 #masthead {
     height: 600px;
+    margin-top: 68px;
 }
 
 #masthead .wrap {
@@ -706,17 +707,15 @@ a:active {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
-    position: absolute;
-    bottom:0;
-}
-
-.navigation-top.fixed {
     position: fixed;
     top: 0;
     left: 0;
     bottom: auto;
-    z-index: 99;
+    z-index: 4;
+    
 }
+
+
 
 .main-navigation {
     clear: both;
