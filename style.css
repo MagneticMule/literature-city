@@ -64,6 +64,7 @@ html {
 
 body {
     margin: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 article,
@@ -711,10 +712,15 @@ a:active {
     top: 0;
     left: 0;
     bottom: auto;
-    z-index: 4;
-    
+    z-index: 4; 
 }
 
+
+/* if the WP admin bar is present - shift the top-menu down 32px.
+    Otherwise, the apadminbar will cover the topmenu */
+.admin-bar #top-menu {
+  top: 32px;
+}
 
 
 .main-navigation {

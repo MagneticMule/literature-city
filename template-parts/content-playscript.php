@@ -12,6 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
+		
 		$book_title = the_title(FALSE) . " This is working";
 		if ( is_singular() ) :
 			echo $book_title;
